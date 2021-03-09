@@ -3,18 +3,17 @@ export const EDIT_TODO = "EDIT_TODO"
 export const DELETE_TODO = "DELETE_TODO"
 
 export const addTodo = (Todos) => {
-  console.log(Todos)
   return {
     type: ADD_TODO,
     Todos
   }
 }
 
-export const editTodo = (id, Todos) => {
+export const editTodo = (item) => {
+  console.log(item)
   return {
     type: EDIT_TODO,
-    id,
-    Todos
+    item
   }
 }
 
