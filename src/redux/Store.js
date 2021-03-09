@@ -1,5 +1,4 @@
-import { createStore, applyMiddleware } from 'redux'
-import thunk from 'redux-thunk';
-import TitleReducers from './reducers/Index';
+import { createStore } from 'redux';
+import handleTodo from './reducers/Todo.Reducers';
 
-export default createStore(TitleReducers, applyMiddleware(thunk))
+export default createStore(handleTodo)
